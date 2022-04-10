@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+$selection-color: #40aafe;
+
+::-moz-selection {
+  background: $selection-color;
+}
+
+::selection {
+  background: $selection-color;
+}
+
 body {
   background-image: url('../static/background.jpg');
   background-color: #262336;
@@ -21,14 +31,19 @@ h1 {
   color: white;
   font-size: 5.8rem;
   font-family: 'Grape Nuts', cursive;
+  line-height: 1em;
 }
 
 h2 {
   color: white;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   line-height: 1em;
 }
 
-.middle-full {
+.middle {
   height: 85vh;
+}
+
+p {
+  color: white;
 }
